@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Base de Monstres</title>
+    <link rel="icon" href="../media/logo.png" type="image/gif">
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="../script/script.js"></script>
+
+    <style>
+    .header{
+        background-image: url("../media/tof.jpg");
+    }
+    .navbar li:hover {
+        background-color: #e20cb7;
+        color:black;
+    }
+    #navmenu{
+        background-color: #e20cb7;
+    }
+    .pied{
+            background-color: #e20cb7;
+        }
+    th,
+        td {
+            border: 1px solid rgb(255, 255, 255);
+            border-collapse: collapse;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+         <div class="header">
+            <div style="display:flex ;align-items:flex-end; background: linear-gradient(90deg, rgba(0,0,0,0.7) 0%, rgba(255,255,255,0) 100%);">
+                <img id="logo" src="../media/MHW_Unknown_Monster_Icon.webp" height="100px">
+                <h1>The First Fleet - Base de Monstres</h1>
+            </div>
+        </div>
+
+        <div class="navbar">
+            <input type=image src="../media/Hamburger_icon_white.png" id="Hamburger Icon" height="50px" onclick="showmenu()">
+            <ul>
+                <li><a href="../index.html" class="boutton"> Acceuil </a></li>
+                <li><a href="./quisommesnous.html" class="boutton"> Info & Pages</a></li>
+                <li><a href="./join.html"> Nous-Rejoindre</a></li>
+            </ul>
+            <input type=image  height="50px" id="moon" onclick="pageslightmode()" src="../media/sun_icon.png" style="right:100px;">
+        </div>
+        <div class="mid">
+            <div id="navmenu">
+                <h3>Menu:</h3>
+                <ul>
+                    <li><a href="../index.html"> Acceuil </a></li>
+                    <li><a href="./quisommesnous.html"> Qui-Sommes-nous?</a></li>
+                    <li><a href="./diaporama.html"> Diaporama</a></li>
+                    <li><a href="./join.html"> Nous-Rejoindre</a></li>
+                    <li><a href="./zinogre.html">Le Zinogre</a></li>
+                    <li><a href="./safijiiva.html">Le Safi'Jiiva</a></li>
+                    <li><a href="./fatalis.html">Le Fatalis</a></li>
+                    <li><a href="../page/base.html">Base de monstres</a></li>
+                </ul>
+            </div>
+            <div id="contenu">
+                <p>Cette page repertorie dans une base de données quelques monstres et leurs informations principales !</p>
+                <button type="button" onclick="loadXMLDoc()"  style="background-color:#e20cb7; border-radius: 10px;height:25px; width:200px;"><b>Afficher</b></button>
+    <button type="button" onclick="loadAddMonster()" style="background-color:cyan; border-radius: 10px;height:25px; width:200px;">Ajouter</button>
+    <button type="button" onclick="saveMonster()" id="btnSave" style="background-color:cyan; border-radius: 10px;height:25px; width:200px;">Telecharger</button>
+    <br><br>
+
+    <table id="data"></table>
+
+    <br>
+    <br>
+    <table id="tblMonstre" style="display: none;">
+        <tr>
+            <td>Monstre</td>
+            <td><input type="text" size="50" id="txtNom"></td>
+        </tr>
+        <tr>
+            <td>Habtitat</td>
+            <td><input type="text" size="50" id="txtHabitat"></td>
+        </tr>
+        <tr>
+            <td>Faiblesse</td>
+            <td><input type="text" size="50" id="txtFaiblesse"></td>
+        </tr>
+        <tr>
+            <td><input type="hidden" id="hId"></td>
+            <td>
+                <button type="button" onclick="updateMonster()" id="btnUpdate">Update</button>                
+            </td>
+        </tr>
+    </table>
+
+    <table id="tblMonstreAdd" style="display: none;">
+        <tr>
+            <td>Monstre</td>
+            <td><input type="text" size="50" id="addtxtNom"></td>
+        </tr>
+        <tr>
+            <td>Habtitat</td>
+            <td><input type="text" size="50" id="addtxtHabitat"></td>
+        </tr>
+        <tr>
+            <td>Faiblesse</td>
+            <td><input type="text" size="50" id="addtxtFaiblesse"></td>
+        </tr>
+        <tr>
+            <td><input type="hidden" id="hId"></td>
+            <td>
+                <button type="button" onclick="addMonster()" id="btnAdd">Add</button>                
+            </td>
+        </tr>
+    </table>
+            </div>
+        </div>
+</body>
+</html>    

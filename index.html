@@ -1,0 +1,142 @@
+<!DOCTYPE html> <!--Defini le type du docuement-->
+
+<html>
+    <head>
+        <meta charset="utf-8" /> <!--encodage des charactères-->
+        <link rel="stylesheet" href="./css/styles.css">
+        <script src="./script/script.js"></script>
+        <link rel="icon" href="./media/logo.png" type="image/gif">
+        <title> Page projet Amélien</title> <!--nom de la page-->
+        <style>
+            .header{
+                background-image: url("./media/tof.jpg");
+
+            }
+            .navbar li:hover {
+            background-color: #eac807;
+            color:white;
+            }
+            #navmenu{
+                background-color: #1a1a1a;
+                color:white;
+            }
+            #navmenu li a{
+                padding:10px;
+                border-radius:10px;
+                color:white;
+            }
+            #navmenu li a:hover{
+                background-color: #3b3b3b ;
+            }
+
+            #navmenu{
+                background-color: #1a1a1a;
+            }
+            #contenu{
+                height:3000px;
+            }
+            #contenu a{
+                color:#23e7e7;
+            }
+
+        .pied{
+            background-color: #eac807;
+        }
+       </style>
+        
+    </head>
+    <body onload="auto()">
+        <div class="header">
+            <div style="display:flex ;align-items:flex-end; background: linear-gradient(90deg, rgba(0,0,0,0.5) 0%, rgba(255,255,255,0) 100%);">
+            <img id="logo" src="./media/logo.png" height="100px">
+            <div class="titre">
+            <h1>The First Fleet - Acceuil</h1>
+            <p>L'association Française repertoriant les monstres du jeu <i><b>Monster Hunter World</b></i></p>
+            </div>
+            </div>
+        </div>
+
+        <div class="navbar">
+            <input type=image src="./media/Hamburger_icon_white.png" height="50px" id="Hamburger Icon" onclick="showmenu()">
+            <ul>
+                <li><a href="./index.html"> Acceuil </a></li>
+                <li><a href="./page/quisommesnous.html"> Infos & Pages </a></li>
+                <li><a href="./page/join.php"> Nous-Rejoindre</a></li>
+            </ul>
+            <input type=image src="./media/sun_icon.png" height="50px" id="moon" onclick="lightmode()" style="right:100px;">
+        </div>
+        
+        <div class="mid">
+                <div id="navmenu">
+                    <h2>· Menu ·</h2>
+                    <div class="barre" style="height:1px; width:90%; background-color:#3b3b3b;"></div>
+                    <ul><h3>
+                        <li><a href="./page/index.html"> Accueil </a></li>
+                        <br>
+                        <li><a href="./page/quisommesnous.html"> Qui-Sommes-nous?</a></li>
+                        <br>
+                        <li><a href="./page/diaporama.html">Diaporama</a></li>
+                        <br>
+                        <li><a href="./page/join.html">Nous-Rejoindre</a></li>
+                        <br>
+                        <li><a href="./page/zinogre.html">Le Zinogre</a></li>
+                        <br>
+                        <li><a href="./page/safijiiva.html">Le Safi'Jiiva</a></li>
+                        <br>
+                        <li><a href="./page/fatalis.html">Le Fatalis</a></li>
+                        <br>
+                        <li><a href="./page/base.html">Base de monstres</a></li>
+                        <br>
+                        <div class="barre" style="height:1px; width:90%; background-color:#3b3b3b;"></div>
+                        <br>
+                        <li><a href="./page/padlet.php">Padlet - Accueil</a></li>
+                        <br>
+                        <li><a href="./page/animation.php">Animation</a></li>
+                        <br>
+                        <li><a href="./page/session.php">Se Connecter</a></li>
+                        <br>
+                        <li><a href="./page/join.php">Nous Rejoindre</a></li>
+
+                    </h3></ul>
+                    <div class="barre" style="height:1px; width:90%; background-color:#3b3b3b;"></div>
+                </div>
+            <div id="contenu">
+                <div style="display:flex;margin-top: 50px;margin-bottom: 50px;">
+                    <img src="./media/mhwi-fatalis_icon.png"height="100px">
+                    <img src="./media/MHWI-Shara_Ishvalda_Icon.webp" height="100px">
+                    <img src="./media/mhwi-safi_jiiva_icon.png"height="100px">
+                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"><img src="./media/logo.png"height="100px"></a>
+                    <img src="./media/mhwi-zinogre_icon.png"height="100px">
+                    <img src="./media/mhwi_xeno_icon.webp" height="100px">
+                    <img src="./media/MHWI-Namielle_Icon.webp" height="100px">
+                </div>
+                <h2>·Bienvenue sur notre site !·</h2>
+                <h3>Découvrez nos pages de monstres:</h3>
+                <div class="imgControl">
+                    <input type="image" src="./media/previous.png" height="50px" onclick="minus()">
+                    <div class="slides">
+                        <a href="./page/zinogre.html"><img src="./media/monster-hunter-world-iceborne-unlock-zinogre.webp" alt="img1" style="width:700px;"></a>
+                        <br>
+                        <h4>Zinogre</h4>
+                    </div>
+                    <div class="slides">
+                        <a href="./page/fatalis.html"><img src="./media/de7ib0y-6890266e-e8cb-442d-a271-0cba36492df2.jpg" alt="img2" style="width:700px;"></a>
+                        <br>
+                        <h4>Fatalis</h4>
+                    </div>
+            
+                    <div class="slides">
+                        <a href="./page/safijiiva.html"><img src="./media/de9l18k-450ef08b-2bb3-455a-acee-4221b395f188.jpg" alt="img3" style="width:700px;"></a>
+                        <br>
+                        <h4>Safi'Jiiva</h4>
+                    </div>
+                    <input type="image" src="./media/next.png" height="50px"onclick="plus()">
+                </div>
+                <h3><a href="./page/quisommesnous.html">En savoir plus sur l'association</a></h3>
+                <h3>Contacts:</h3>
+                <h4>Instagram: <a href="https://www.instagram.com/amelien.lmr/?hl=fr" target="_blank">@amelien.lmr</a> - Twitter: <a href="https://twitter.com/amelien_lmr" target="_blank">@amelien_lmr</a> - Mail:amelien.lmr@gmail.com</h4>
+            </div>
+        </div>
+        <div class="pied"></div>
+    </body>
+</html>

@@ -1,0 +1,346 @@
+::-webkit-scrollbar {
+    display: none;
+}
+element {
+    -ms-overflow-style: none; /* for Internet Explorer, Edge */
+    scrollbar-width: none; /* for Firefox */
+    overflow-y: scroll; 
+}
+@keyframes slideInLeft {
+    0% {
+    transform: translateX(-100%);
+    color: rgba(0, 0, 0, 0.0);
+    }
+    100% {
+    transform: translateX(0);
+    color:white;
+    }
+}
+@keyframes appearence {
+    0%{
+        background-color:#1a1a1a;
+    }
+    100%{
+        background-color: #faa700dd;
+    }
+}
+html{
+    padding-left: 0;
+}
+
+body{
+    padding-left:0;
+    background-color:#1a1a1a;
+    color:rgb(218, 218, 218);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.pied{
+    width:100%;
+    height:50px;
+}
+.header{
+    padding-left: 0;
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-end;
+    margin: 0px;
+    height:100vh;
+    width:100%;    
+    background-size:100%;
+    background-repeat: no-repeat;
+}
+.header img{
+    margin: 10px;
+}
+.titre{
+    margin: 10px;
+}
+
+#logo{
+    display: flex;
+    justify-self:flex-start;
+}
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position:sticky;
+    top:0;
+    border-style:none none solid none;
+    border-color:#3b3b3b;
+    background-color: #1a1a1a;
+    width: 100%;
+    height: 70px;
+
+}
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    justify-content : space-around;
+    width:100%;
+}
+
+.navbar li {
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    background-color: #3b3b3b;
+    width: 20%;
+    border-radius: 10px;
+}
+.navbar li a {
+    text-decoration: none;
+    color:rgb(218, 218, 218);
+}
+
+
+.navbar li:hover a {
+    color:black;
+}
+
+.mid{
+    height: 1080px;
+    display: flex;
+    flex-direction: row;
+}
+
+#navmenu{
+    display: none;
+    position:sticky;
+    top:70px;
+    flex-direction:column;
+    align-items:center;
+    height:90vh;
+    width: 20%;
+    margin-right:50px;
+    color:black;
+    border-style:none solid none none  ;
+    border-color: #3b3b3b;
+}
+#navmenu ul {
+    list-style-type: none;
+    justify-content : space-around;
+    width: 100%;  
+}
+
+#navmenu li a {
+    text-decoration: none;
+    color:black;
+}
+#navmenu li a:hover {
+    text-decoration: none;
+    color:#ffffff;
+}
+#listepages li a:hover {
+    text-decoration: none;
+    color:#ffffff;
+}
+
+#contenu{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    width: 100%;
+    height:100%;
+    margin:50px;
+}
+#contenu h2{
+    color: #eac807 ;
+}
+#control button{
+    background-color:#3b3b3b;
+    border-radius:10px;
+}
+
+
+.imgControl{
+    display:flex;
+    flex-direction:row;
+    width:400px;
+    justify-content:space-around ;
+    align-items: center;
+}
+.slides {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+}
+.slides img{
+    border-radius: 10px;
+}
+
+.frame{
+    display: flex;
+    justify-content: center;
+    width:100%;
+    height: 300px;
+}
+
+
+#contenupadlet {
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+}
+#contenupadlet p{
+    margin:20px;
+    
+}
+
+#contenupadlet img{
+    margin:50px;
+    border-radius:10px;
+}
+.actualite{
+    width:450px;
+    height:fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    background-color: #0fbcbc;
+    color: black;
+    border-radius: 10px;
+    margin:20px;
+}
+.activite{
+    width:450px;
+    height:fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    background-color: #d21349;
+    color: black;
+    border-radius: 10px;
+    margin:20px;
+}
+.atelier{
+    animation: 3s 0s 1 appearence;
+    transition: width 0.2s, height 0.2s,margin 0.2s;
+    width:450px;
+    height:450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items:center;
+    background-color: #faa700dd;
+    color: black;
+    border-radius: 10px;
+    margin:20px;
+    padding:50px;
+    text-align: center;
+}
+
+.atelier:hover{
+    width:480px;
+    height:480px;
+    margin:15px;
+}
+
+
+.inputbox{
+    position:relative;
+    margin-top:20px;
+    margin-bottom:20px;
+}
+.inputbox label {
+    position: absolute;
+    top: 0;
+    left: 40px;
+    padding: 0.625rem 0;
+    font-size: 1rem;
+    color: grey;
+    pointer-events: none;
+    transition:0.3s;
+  }
+  
+.inputbox input:focus ~ label,
+.inputbox input:not([value=""]) ~ label {
+    top: -1.125rem;
+    left: 10px;
+    color: #0de9a7;
+    font-size: 1rem;
+    background-color: #1a1a1a;
+    height: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .inputboxnames{
+    position:relative;
+    margin-top:20px;
+    margin-bottom:20px;
+}
+.inputboxnames label {
+    position: absolute;
+    top: 0;
+    left: 40px;
+    padding: 0.625rem 0;
+    font-size: 1rem;
+    color: grey;
+    pointer-events: none;
+    transition:0.3s;
+  }
+  
+.inputboxnames input:focus ~ label,
+.inputboxnames input:not([value=""]) ~ label {
+    top: -1.125rem;
+    left: 50px;
+    color: #0de9a7;
+    font-size: 1rem;
+    background-color: #1a1a1a;
+    height: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+
+#ressources{
+    display: flex;
+    width:100%;
+    margin:30px;
+    flex-direction:row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#profil{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-around;
+    align-items: center;
+    border-radius:10px; 
+    border-style:solid; 
+    border-width: 2px;
+    border-color:#3b3b3b;
+    height:300px;
+    width:fit-content;
+    padding:20px;
+}
+
+#infosprofil{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: flex-start;
+    margin:20px;
+    margin-right: 70px;
+    
+}
+
+#infosprofil h{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+#infosprofil color-title{
+    color:#00aaff;;
+}

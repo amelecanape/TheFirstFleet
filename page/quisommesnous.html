@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Infos</title>
+    <link rel="icon" href="../media/logo.png" type="image/gif">
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="../script/script.js"></script>
+
+    <style>
+    .header{
+        background-image: url("../media/capcom-annonce-le-retour-du-glavenus-dans-monster-hunter-world-iceborne-91ea52d6.jpg");
+    }
+    .navbar li:hover {
+        background-color: #e98400;
+        color:black;
+    }
+    #navmenu{
+        background-color: #e98400;
+    }
+    .pied{
+            background-color: #e98400;
+        }
+    </style>
+</head>
+<body>
+         <div class="header">
+            <div style="display:flex ;align-items:flex-end; background: linear-gradient(90deg, rgba(0,0,0,0.7) 0%, rgba(255,255,255,0) 100%);">
+                <img id="logo" src="../media/MHW_Unknown_Monster_Icon.webp" height="100px">
+                <h1>The First Fleet - Qui-Sommes-nous?</h1>
+            </div>
+        </div>
+
+        <div class="navbar">
+            <input type=image src="../media/Hamburger_icon_white.png" id="Hamburger Icon" height="50px" onclick="showmenu()">
+            <ul>
+                <li><a href="../index.html" class="boutton"> Acceuil </a></li>
+                <li><a href="./quisommesnous.html" class="boutton"> Info & Pages</a></li>
+                <li><a href="./join.html"> Nous-Rejoindre</a></li>
+            </ul>
+            <input type=image  height="50px" id="moon" onclick="pageslightmode()" src="../media/sun_icon.png" style="right:100px;">
+        </div>
+        <div class="mid">
+            <div id="navmenu">
+                <h3>Menu:</h3>
+                <ul>
+                    <li><a href="../index.html"> Acceuil </a></li>
+                    <li><a href="./quisommesnous.html"> Qui-Sommes-nous?</a></li>
+                    <li><a href="./diaporama.html"> Diaporama</a></li>
+                    <li><a href="./join.html"> Nous-Rejoindre</a></li>
+                    <li><a href="./zinogre.html">Le Zinogre</a></li>
+                    <li><a href="./safijiiva.html">Le Safi'Jiiva</a></li>
+                    <li><a href="./fatalis.html">Le Fatalis</a></li>
+                    <li><a href="../page/base.html">Base de monstres</a></li>
+                </ul>
+            </div>
+            <div id="contenu">
+                <img src="../media/logo.png" height="100px">
+                <h2>·Présentation de l'association:·</h2>
+                <br>
+                <p>The First Fleet est une association de Fans du jeu Monster Hunter World: Iceborne et, en particulier, de son bestiaire. L'objectif de ce site est de rassembler les infos sur plusieus de nos monstres favoris, comme le Zinogre ou le Safi'Jiiva.</p> 
+                <br>
+                <h2>·Monster Hunter World, c'est quoi?·</h2>
+                <p>Monster Hunter: World, et son extension Iceborne, est un jeu developpé par Capcom. Dans ce jeu, le heros, nommé "Chasseur" ou "Etoile de sapphire" chasse des monstres (wow, on s'y attendais pas). De la préparation, au combat, et même après la chasse, Monster Hunter est considéré comme l'un des TPS aux gameplays les plus abouttis.</p>
+                <p style="justify-content:left">Cet Opus de Monster Hunter se déroule dans le nouveau-monde, un nouveau continent récemment découvert où de nombreux monstres inconnus se terrent, dont certains, plus dangereux que jamais.</p>
+                <br>
+                <img src="../media/map.jpg" height="500px" style="border-radius:10px;">
+                <p id="joyeux" style="justify-content:center">Nous vous souhaitons de passer un agréable moment sur notre site !</p>
+                <div id="listepages" style="width:40vh; display:flex; flex-direction:column; align-items:center; background-color:#eac807; border:dotted; border-radius:10px; color:black">
+                    <h2 style="color:black">Pages de monstres:</h2> 
+                    <ul>
+                        <li><a href="./zinogre.html" style="text-decoration:none; color:black">Le Zinogre</a></li>
+                        <li><a href="./safijiiva.html" style="text-decoration:none; color:black">Le Safi'Jiiva</a></li>
+                        <li><a href="./fatalis.html"style="text-decoration:none; color:black">Le Fatalis</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+</body>
+</html>    

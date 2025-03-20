@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Diaporama</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="icon" href="../media/logo.png" type="image/gif">
+    <script src="../script/script.js"></script>
+    <style>
+        .header{
+            background-image: url("../media/MHWI-Seliana_Artwork_001.webp");
+        }
+        .navbar li:hover {
+            background-color: #00b806;
+            color:black;
+        }
+        #navmenu{
+            background-color: #00b806;
+        }
+        th,
+            td {
+                border: 1px solid rgb(255, 255, 255);
+                border-collapse: collapse;
+            }
+    
+            table {
+                border-collapse: collapse;
+            }
+    
+            th,
+            td {
+                padding: 5px;
+            }
+            #control button:hover{
+                background-color:#00b806;
+            }
+            .pied{
+            background-color: #00b806;
+        }
+        </style>
+</head>
+<body onload="displaySlide()">
+         <div class="header">
+            <div style="display:flex ;align-items:flex-end; background: linear-gradient(90deg, rgba(0,0,0,0.5) 0%, rgba(255,255,255,0) 100%);">
+                <img id="logo" src="../media/logo.png" height="100px">
+                <h1>Association - Diaporama</h1>
+            </div>
+        </div>
+
+        <div class="navbar">
+            <input type=image src="../media/Hamburger_icon_white.png" id="Hamburger Icon" height="50px" onclick="showmenu()">
+            <ul>
+                <li><a href="../index.html" class="boutton"> Acceuil </a></li>
+                <li><a href="./quisommesnous.html" class="boutton"> Info & Pages</a></li>
+                <li><a href="./join.html"> Nous-Rejoindre</a></li>
+            </ul>
+            <input type=image  height="50px" id="moon" onclick="pageslightmode()" src="../media/sun_icon.png" style="right:100px;">
+        </div>
+        <div class="mid">
+            <div id="navmenu">
+                <h3>Menu:</h3>
+                <ul>
+                    <li><a href="../index.html"> Acceuil </a></li>
+                    <li><a href="./quisommesnous.html"> Qui-Sommes-nous?</a></li>
+                    <li><a href="./diaporama.html"> Diaporama</a></li>
+                    <li><a href="./join.html"> Nous-Rejoindre</a></li>
+                    <li><a href="./zinogre.html">Le Zinogre</a></li>
+                    <li><a href="./safijiiva.html">Le Safi'Jiiva</a></li>
+                    <li><a href="./fatalis.html">Le Fatalis</a></li>
+                    <li><a href="../page/base.html">Base de monstres</a></li>
+                </ul>
+            </div>
+            <div id="contenu">
+                <div class="slides">
+                    <img src="../media/safidiapo.jpg" alt="img1" style="width:500px;">
+                </div>
+        
+                <div class="slides">
+                    <img src="../media/diapo2.jpg" alt="img2" style="width:500px;">
+                </div>
+        
+                <div class="slides">
+                    <img src="../media/MHWI-Seliana_Artwork_001.webp" alt="img3" style="width:500px;">
+                </div>
+                <div id="control">
+                    <button type="button" onclick="minus()">Previous</button>
+                    <button type="button" onclick="showImage(0)">Image 1</button>
+                    <button type="button" onclick="showImage(1)">Image 2</button>
+                    <button type="button" onclick="showImage(2)">Image 3</button>
+                    <button type="button" onclick="plus()">Next</button>
+                    
+                </div>
+                <div class="imgControl">
+                <br>
+                    <input type="image" src="../media/previous.png" height="50px" onclick="minus()">
+                    <br>
+                    <br>
+                    <input type="image" src="../media/safidiapo.jpg" width="50px" onclick="showImage(0)">
+                    <br>
+                    <input type="image" src="../media/diapo2.jpg" width="50px" onclick="showImage(1)">
+                    <br>
+                    <input type="image" src="../media/MHWI-Seliana_Artwork_001.webp" width="50px" onclick="showImage(2)">
+                    <br>
+                    <input type="image" src="../media/next.png" height="50px"onclick="plus()">
+                </div>
+            </div>
+        </div>
+</body>
+</html>    
